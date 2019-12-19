@@ -33,11 +33,47 @@
             <span class="navbar-brand-full">Project</span>
             <span class="navbar-brand-minimized">P</span>
         </a>
-        <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+        <button class="navbar-toggler sidebar-toggler d-md-down-none mg-left--16" type="button" data-toggle="sidebar-lg-show">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <ul class="nav navbar-nav ml-auto">
+            <div id="userbox" class="userbox">
+                <a href="#" data-toggle="dropdown" aria-expanded="false">
+                    <figure class="profile-picture">
+                        <?php
+                            $urlAvata = null;
+                        ?>
+                        @if (!empty($urlAvata))
+                            <img src="{{ $urlAvata }}" alt="avata" class="avata-sidebar float-left">
+                        @else
+                            <div class="member-sidebar float-left">
+                                <span class="avata-sidebar member-initials-sidebar">{{ substr(auth()->user()->name, 0, 1) }}</span>
+                            </div>
+                        @endif
+                    </figure>
+                    <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
+                        <span class="name">{{ ucwords(auth()->user()->name) }}</span>
+                        <span class="role"></span>
+                    </div>
+                    <span><img src="{{ asset('images/drop-down-arrow.svg') }}" alt="arrow-account" class="dropdown-arrow-account"></span>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <div class="dropdown-header text-center">
+                        <strong>Account</strong>
+                    </div>
+                    <a class="dropdown-item" href="#">
+                        <i class="fa fa-bell-o"></i>Updates
+                        <span class="badge badge-info">42</span>
+                    </a>
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                        <i class="fa fa-lock"></i>{{ __('Logout') }}
+                    </a>
+                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+                        @csrf
+                    </form>
+                </div>
+            </div>
             @if(count(config('panel.available_languages', [])) > 1)
                 <li class="nav-item dropdown d-md-down-none">
                     <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">

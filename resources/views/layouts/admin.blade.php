@@ -30,17 +30,19 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <span class="navbar-brand-full">Project</span>
-            <span class="navbar-brand-minimized">P</span>
+            <!-- <span class="navbar-brand-full">Project</span> -->
+            <!-- <span class="navbar-brand-minimized">{{ ucfirst(substr(auth()->user()->name, 0, 1)) }}</span> -->
+            <img class="logo-header navbar-brand-full m-0" src="{{ asset('images/logo.png') }}">
+            <img class="logo-small-header navbar-brand-minimized m-0" src="{{ asset('images/logo-small.png') }}">
         </a>
         <button class="navbar-toggler sidebar-toggler d-md-down-none mg-left--16" type="button" data-toggle="sidebar-lg-show">
             <span class="navbar-toggler-icon"></span>
         </button>
 
         <ul class="nav navbar-nav ml-auto">
-            <div id="userbox" class="userbox">
+            <div id="userbox" class="userbox mg-right-15">
                 <a href="#" data-toggle="dropdown" aria-expanded="false">
-                    <figure class="profile-picture">
+                    <!-- <figure class="profile-picture"> -->
                         <?php
                             $urlAvata = null;
                         ?>
@@ -51,23 +53,22 @@
                                 <span class="avata-sidebar member-initials-sidebar">{{ substr(auth()->user()->name, 0, 1) }}</span>
                             </div>
                         @endif
-                    </figure>
-                    <div class="profile-info" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
+                    <!-- </figure> -->
+                    <div class="profile-info mg-right-10 pd-top-5" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
                         <span class="name">{{ ucwords(auth()->user()->name) }}</span>
-                        <span class="role"></span>
+                        <span class="role">{{ ucwords(auth()->user()->roles[0]->title) }}</span>
                     </div>
-                    <span><img src="{{ asset('images/drop-down-arrow.svg') }}" alt="arrow-account" class="dropdown-arrow-account"></span>
+                    <!-- <span><img src="{{ asset('images/drop-down-arrow.svg') }}" alt="arrow-account" class="dropdown-arrow-account"></span> -->
                 </a>
                 <div class="dropdown-menu dropdown-menu-right">
                     <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
                     <a class="dropdown-item" href="#">
-                        <i class="fa fa-bell-o"></i>Updates
-                        <span class="badge badge-info">42</span>
+                        <i class="nav-icon fas fa-user"></i>Profile
                     </a>
                     <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <i class="fa fa-lock"></i>{{ __('Logout') }}
+                        <i class="nav-icon fas fa-sign-out-alt"></i>{{ __('Logout') }}
                     </a>
                     <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                         @csrf

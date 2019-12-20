@@ -22,3 +22,9 @@ max key length is 767 bytes (SQL: alter table "users" add unique "users_email_un
 		{
 			Schema::defaultStringLength(191);
 		}
+- Redirect when `Exceptions` (404, 500 ...)
+	=>	App\Exceptions\Handler.php
+		In Kernel move    
+			`\Illuminate\Session\Middleware\StartSession::class,    
+			\Illuminate\View\Middleware\ShareErrorsFromSession::class,`
+        from `$middlewareGroups` to `$middleware`

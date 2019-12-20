@@ -1,6 +1,7 @@
 <?php
 
-Route::redirect('/', '/login');
+Route::redirect('/', '/');
+Route::get('/', 'WelcomeController@showWelcome')->name('welcome');
 
 Route::redirect('/home', '/admin');
 

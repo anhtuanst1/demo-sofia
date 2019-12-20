@@ -27,23 +27,23 @@ max key length is 767 bytes (SQL: alter table "users" add unique "users_email_un
 
 	=>	App\Exceptions\Handler.php
 		In Kernel move    
-			```
-			$ Kernel.php
-			\Illuminate\Session\Middleware\StartSession::class,
-			\Illuminate\View\Middleware\ShareErrorsFromSession::class,
-			```    
+```
+$ Kernel.php    
+\Illuminate\Session\Middleware\StartSession::class,    
+\Illuminate\View\Middleware\ShareErrorsFromSession::class,    
+```    
 		from `$middlewareGroups` to `$middleware`
 
 - It is unsafe to run [Dusk](http://terrapinssky.blogspot.com/2017/10/laravelresolved-it-is-unsafe-to-run.html) in production.
 
-	=>	```
-		$ composer.json
-		`extra`: {
-			`laravel`: {
-				`dont-discover`: [
-					`laravel/dusk`
-				]
-			}
-		}
-		```    
+```
+$ composer.json    
+`extra`: {    
+	`laravel`: {    
+		`dont-discover`: [    
+			`laravel/dusk`    
+		]    
+	}    
+}    
+```    
 		then run `composer dump-autoload`

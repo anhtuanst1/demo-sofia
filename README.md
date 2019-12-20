@@ -24,6 +24,7 @@ max key length is 767 bytes (SQL: alter table "users" add unique "users_email_un
 		}
 
 - Redirect when `Exceptions` (404, 500 ...)
+
 	=>	App\Exceptions\Handler.php
 		In Kernel move    
 			```    
@@ -33,14 +34,20 @@ max key length is 767 bytes (SQL: alter table "users" add unique "users_email_un
 		from `$middlewareGroups` to `$middleware`
 
 - It is unsafe to run [Dusk](http://terrapinssky.blogspot.com/2017/10/laravelresolved-it-is-unsafe-to-run.html) in production.
-	=>    
-		```    
+
+	=>	```    
 		"extra": {    
-			"laravel": {    
+
+			"laravel": {   
+
 				"dont-discover": [    
+
 					"laravel/dusk"    
+
 				]    
+
 			}    
+			
 		}    
 		```    
 		then run `composer dump-autoload`

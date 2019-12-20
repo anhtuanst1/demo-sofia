@@ -1,11 +1,11 @@
 <?php
 
-namespace App;
+namespace App\Model;
 
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
 
-class Permission extends Model
+class Role extends Model
 {
     use SoftDeletes;
 
@@ -21,4 +21,9 @@ class Permission extends Model
         'updated_at',
         'deleted_at',
     ];
+
+    public function permissions()
+    {
+        return $this->belongsToMany(Permission::class);
+    }
 }

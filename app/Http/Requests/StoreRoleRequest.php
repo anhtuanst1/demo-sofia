@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Role;
+use App\Model\Role;
 use Illuminate\Foundation\Http\FormRequest;
 
 class StoreRoleRequest extends FormRequest

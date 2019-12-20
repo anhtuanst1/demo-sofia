@@ -6,7 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests\MassDestroyUserRequest;
 use App\Http\Requests\StoreUserRequest;
 use App\Http\Requests\UpdateUserRequest;
-use App\Role;
+use App\Model\Role;
 use App\User;
 
 class UsersController extends Controller
@@ -52,12 +52,17 @@ class UsersController extends Controller
 
     public function update(UpdateUserRequest $request, User $user)
     {
+        $response = [
+            'message'       => 'Update Successfully!',
+            'alert-type'    => 'success'
+        ];
+
         abort_unless(\Gate::allows('user_edit'), 403);
 
         $user->update($request->all());
         $user->roles()->sync($request->input('roles', []));
 
-        return redirect()->route('admin.users.index');
+        return redirect()->route('admin.users.index')->with($response);
     }
 
     public function show(User $user)

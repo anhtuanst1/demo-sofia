@@ -2,7 +2,7 @@
 
 namespace App\Http\Requests;
 
-use App\Permission;
+use App\Model\Permission;
 use Gate;
 use Illuminate\Foundation\Http\FormRequest;
 

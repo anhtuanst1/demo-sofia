@@ -4,6 +4,8 @@ namespace App\Exceptions;
 
 use Exception;
 use Illuminate\Foundation\Exceptions\Handler as ExceptionHandler;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class Handler extends ExceptionHandler
 {
@@ -46,6 +48,27 @@ class Handler extends ExceptionHandler
      */
     public function render($request, Exception $exception)
     {
-        return parent::render($request, $exception);
+        if ($this->isHttpException($exception)) {
+            switch ($exception->getStatusCode())
+                {
+                // not found
+                case 404:
+                    if (auth()->check())
+                        return redirect('/home');
+                    return redirect()->guest(route('welcome'));
+                    break;
+
+                // internal error
+                case 500:
+                    return redirect()->guest(route('welcome'));
+                    break;
+
+                default:
+                    return $this->renderHttpException($exception);
+                break;
+            }
+        } else {
+            return parent::render($request, $exception);
+        }
     }
 }

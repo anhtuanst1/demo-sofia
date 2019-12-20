@@ -166,7 +166,6 @@ return [
          * Package Service Providers...
          */
         Bugsnag\BugsnagLaravel\BugsnagServiceProvider::class,
-        Laravel\Dusk\DuskServiceProvider::class,
 
         /*
          * Application Service Providers...

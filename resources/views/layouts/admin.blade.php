@@ -29,9 +29,7 @@
         <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <a class="navbar-brand" href="#">
-            <!-- <span class="navbar-brand-full">Project</span> -->
-            <!-- <span class="navbar-brand-minimized">{{ ucfirst(substr(auth()->user()->name, 0, 1)) }}</span> -->
+        <a class="navbar-brand" href="javascript:void(0);">
             <img class="logo-header navbar-brand-full m-0" src="{{ asset('images/logo.png') }}">
             <img class="logo-small-header navbar-brand-minimized m-0" src="{{ asset('images/logo-small.png') }}">
         </a>
@@ -39,45 +37,57 @@
             <span class="navbar-toggler-icon"></span>
         </button>
 
+        <ul class="nav navbar-nav d-sm-down-none" id="search-global-form">
+            <li class="in">
+                <form id="search-suggestion-form" role="search" class="app-search hidden-xs">
+                    <input class="form-control search-box" name="search" id="search-suggestion" type="search" placeholder="Type keyword and enter" aria-label="Search">
+                    <a href="javascript:void(0);" class="active">
+                        <img src="{{ asset('images/search_icon.svg') }}" class="search-icon" alt="search icon">
+                    </a>
+                </form>
+                <div class="suggestion-form">
+                    <div id="filter-suggestion">
+                    </div>
+                </div>
+            </li>
+        </ul>
+
         <ul class="nav navbar-nav ml-auto">
-            <div id="userbox" class="userbox mg-right-15">
-                <a href="#" data-toggle="dropdown" aria-expanded="false">
-                    <!-- <figure class="profile-picture"> -->
-                        <?php
-                            $urlAvata = null;
-                        ?>
-                        @if (!empty($urlAvata))
-                            <img src="{{ $urlAvata }}" alt="avata" class="avata-sidebar float-left">
-                        @else
-                            <div class="member-sidebar float-left">
-                                <span class="avata-sidebar member-initials-sidebar">{{ substr(auth()->user()->name, 0, 1) }}</span>
-                            </div>
-                        @endif
-                    <!-- </figure> -->
-                    <div class="profile-info mg-right-10 pd-top-5" data-lock-name="John Doe" data-lock-email="johndoe@JSOFT.com">
+            <li class="d-md-down-none vertical-line">
+                <span class="separator"></span>
+            </li>
+            <div id="userbox" class="userbox">
+                <a href="javascript:void(0);" data-toggle="dropdown" aria-expanded="false">
+                    <?php
+                        $urlAvata = null;
+                    ?>
+                    @if (!empty($urlAvata))
+                        <img src="{{ $urlAvata }}" alt="avata" class="avata-sidebar float-left">
+                    @else
+                        <div class="member-sidebar float-left">
+                            <span class="avata-sidebar member-initials-sidebar">{{ substr(auth()->user()->name, 0, 1) }}</span>
+                        </div>
+                    @endif
+                    <div class="profile-info mg-right-10 pd-top-5">
                         <span class="name">{{ ucwords(auth()->user()->name) }}</span>
                         <span class="role">{{ ucwords(auth()->user()->roles[0]->title) }}</span>
                     </div>
-                    <!-- <span><img src="{{ asset('images/drop-down-arrow.svg') }}" alt="arrow-account" class="dropdown-arrow-account"></span> -->
                 </a>
-                <div class="dropdown-menu dropdown-menu-right">
+                <div class="dropdown-menu dropdown-menu-right mg-top-10">
                     <div class="dropdown-header text-center">
                         <strong>Account</strong>
                     </div>
-                    <a class="dropdown-item" href="#">
+                    <a class="dropdown-item" href="javascript:void(0);">
                         <i class="nav-icon fas fa-user"></i>Profile
                     </a>
-                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
-                        <i class="nav-icon fas fa-sign-out-alt"></i>{{ __('Logout') }}
+                    <a class="dropdown-item" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logoutform').submit();">
+                        <i class="nav-icon fas fa-sign-out-alt"></i>{{ trans('global.logout') }}
                     </a>
-                    <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
-                        @csrf
-                    </form>
                 </div>
             </div>
             @if(count(config('panel.available_languages', [])) > 1)
                 <li class="nav-item dropdown d-md-down-none">
-                    <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+                    <a class="nav-link" data-toggle="dropdown" href="javascript:void(0);" role="button" aria-haspopup="true" aria-expanded="false">
                         {{ strtoupper(app()->getLocale()) }}
                     </a>
                     <div class="dropdown-menu dropdown-menu-right">

@@ -3,71 +3,66 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <!-- Meta Tags -->
 
-        <title>Sofia &mdash; Love Story</title>
+        <!-- Page Title -->
+        <title> Lovly Wedding - Responsive Wedding Template </title>
 
-        <!-- Facebook and Twitter integration -->
-        <meta property="og:title" content=""/>
-        <meta property="og:image" content=""/>
-        <meta property="og:url" content=""/>
-        <meta property="og:site_name" content=""/>
-        <meta property="og:description" content=""/>
-        <meta name="twitter:title" content="" />
-        <meta name="twitter:image" content="" />
-        <meta name="twitter:url" content="" />
-        <meta name="twitter:card" content="" />
+        <!-- Favicon and Touch Icons -->
+        <!-- <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/favicon.png" rel="shortcut icon" type="image/png">
+        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon.png" rel="apple-touch-icon">
+        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
+        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
+        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"> -->
 
-        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-        <link rel="shortcut icon" href="favicon.ico">
+        <!-- Icon fonts -->
+        <!-- <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" /> -->
+        <!-- <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" /> -->
 
-        <!-- Fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,300,600,400italic,700' rel='stylesheet' type='text/css'>
-        <link href="https://fonts.googleapis.com/css?family=Clicker+Script" rel="stylesheet">
+        <!-- Bootstrap core CSS -->
+        <link href="{{ asset('css/new/bootstrap.min.css') }}" rel="stylesheet" />
 
-        <!-- Animate.css -->
-        <link rel="stylesheet" href="{{ asset('css/animate.css') }}">
-        <!-- Icomoon Icon Fonts-->
-        <link rel="stylesheet" href="{{ asset('css/icomoon.css') }}">
-        <!-- Simple Line Icons -->
-        <link rel="stylesheet" href="{{ asset('css/simple-line-icons.css') }}">
-        <!-- Owl Carousel -->
-        <link rel="stylesheet" href="{{ asset('css/owl.carousel.min.css') }}">
-        <link rel="stylesheet" href="{{ asset('css/owl.theme.default.min.css') }}">
-        <!-- Magnific popup  -->
-        <link rel="stylesheet" href="{{ asset('css/magnific-popup.css') }}">
-        <!-- Bootstrap  -->
-        <link rel="stylesheet" href="{{ asset('css/bootstrap.css') }}">
-        
-        <!-- Styles -->
-        <link rel="stylesheet" href="{{ asset('css/style.css') }}">
+        <!-- Plugins for this template -->
+        <link href="{{ asset('css/new/animate.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/new/owl.carousel.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/new/owl.theme.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/new/slick.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/new/slick-theme.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/new/owl.transitions.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/new/jquery.fancybox.css') }}" rel="stylesheet" />
+        <link href="{{ asset('css/new/magnific-popup.css') }}" rel="stylesheet" />
+
+        <!-- Custom styles for this template -->
+        <link href="{{ asset('css/new/style.css') }}" rel="stylesheet" />
+
+        <style type="text/css">
+            .fancybox-margin {
+                margin-right:10px;
+            }
+
+            .jquery-ripples {
+                position: relative;
+                z-index: 0;
+            }
+        </style>
     </head>
-    <body>
+    <body id="home">
         @yield('content-public')
 
         @yield('scripts')
 
-        <!-- jQuery -->
-        <script src="{{ asset('js/jquery-public.min.js') }}"></script>
-        <!-- jQuery Easing -->
-        <script src="{{ asset('js/jquery.easing.1.3.js') }}"></script>
-        <!-- Modernizr JS -->
-        <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
-        <!-- Bootstrap -->
-        <script src="{{ asset('js/bootstrap.min.js') }}"></script>
-        <!-- Waypoints -->
-        <script src="{{ asset('js/jquery.waypoints.min.js') }}"></script>
-        <!-- YTPlayer -->
-        <script src="{{ asset('js/jquery.mb.YTPlayer.min.js') }}"></script>
-        <!-- Flexslider -->
-        <script src="{{ asset('js/jquery.flexslider-min.js') }}"></script>
-        <!-- Owl Carousel -->
-        <script src="{{ asset('js/owl.carousel.min.js') }}"></script>
-        <!-- Parallax -->
-        <script src="{{ asset('js/jquery.stellar.min.js') }}"></script>
-        <!-- Magnific Popup -->
-        <script src="{{ asset('js/jquery.magnific-popup.min.js') }}"></script>
-        <script src="{{ asset('js/magnific-popup-options.js') }}"></script>
-        <!-- Main JS (Do not remove) -->
-        <script src="{{ asset('js/main-public.js') }}"></script>
+        <!-- All JavaScript files -->
+        <script src="{{ asset('js/new/jquery.min.js') }}"></script>
+        <script src="{{ asset('js/new/bootstrap.min.js') }}"></script>
+
+        <!-- Fontawesome -->
+        <script src="https://kit.fontawesome.com/4e0729bc23.js" crossorigin="anonymous"></script>
+
+        <!-- Plugins for this template -->
+        <script src="{{ asset('js/new/jquery-plugin-collection.js') }}"></script>
+
+        <!-- Custom script for this template -->
+        <script src="{{ asset('js/new/script.js') }}"></script>
     </body>
 </html>

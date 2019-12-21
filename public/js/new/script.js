@@ -668,13 +668,13 @@
     ==========================================================================*/
         $(window).on('load', function() {
 
-            // preloader();
+            preloader();
 
-            // sliderBgSetting();
+            sliderBgSetting();
 
-            // toggleMobileNavigation();
+            toggleMobileNavigation();
 
-            // smallNavFunctionality();
+            smallNavFunctionality();
 
             clickMenu();
 
@@ -731,6 +731,13 @@
             e.target.class != "music-holder") {
             if($(".music-box").find(".music-holder").hasClass("toggle-music-box")) {
                 $(".music-holder").toggleClass("toggle-music-box");
+            }
+        }
+
+        //to toogle dropdown small-nav
+        if (e.target.class != "close-navbar" && e.target.class != "slideInn") {
+            if($(".navigation-holder").hasClass("slideInn")) {
+                $(".navigation-holder").removeClass("slideInn");
             }
         }
     });

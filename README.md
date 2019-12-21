@@ -17,11 +17,14 @@
 max key length is 767 bytes (SQL: alter table "users" add unique "users_email_unique"("email"))`
 
 	=> Fix: AppServiceProvider.php
-		use Illuminate\Support\Facades\Schema;
-		public function boot()
-		{
-			Schema::defaultStringLength(191);
-		}
+```
+use Illuminate\Support\Facades\Schema;
+
+public function boot()
+{
+	Schema::defaultStringLength(191);
+}
+```
 
 - Redirect when `Exceptions` (404, 500 ...)
 
@@ -34,7 +37,7 @@ $ Kernel.php
 ```    
 		from `$middlewareGroups` to `$middleware`
 
-- It is unsafe to run [Dusk](http://terrapinssky.blogspot.com/2017/10/laravelresolved-it-is-unsafe-to-run.html) in production.
+- In `production`: It is unsafe to run [Dusk](http://terrapinssky.blogspot.com/2017/10/laravelresolved-it-is-unsafe-to-run.html).
 
 ```
 $ composer.json    
@@ -47,3 +50,20 @@ $ composer.json
 }    
 ```    
 		then run `composer dump-autoload`
+
+- In `production`: This request has been blocked; the content must be served over HTTPS.
+
+	- Fix: AppServiceProvider.php
+
+```
+use Illuminate\Routing\UrlGenerator;
+
+public function boot(UrlGenerator $url)
+{
+    if (env('REDIRECT_HTTPS')) {
+        $url->forceScheme('https');
+    }
+}
+```
+
+	- Define `REDIRECT_HTTPS=https` in the env 's production.

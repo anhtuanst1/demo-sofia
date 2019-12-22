@@ -29,15 +29,18 @@
 
         <!-- start of hero -->
         <section class="hero" id="home" data-section="home">
-            <div class="hero-slider hero-slider-s1 slick-initialized slick-slider slick-dotted" role="toolbar"><button type="button" class="slick-prev slick-arrow" style="display: block;">Previous</button>
-                <div aria-live="polite" class="slick-list draggable"><div class="slick-track" role="listbox" style="opacity: 1; width: 2540px;"><div class="slide-item slick-slide slick-current slick-active" data-slick-index="0" style="background-image: url(&quot;images/slider/slide-1.jpg&quot;); background-size: cover; background-position: center center; width: 1270px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00">
-                    <img src="{{ asset('images/slider/slide-1.jpg') }}" alt="" class="slider-bg">
-                </div><div class="slide-item slick-slide" data-slick-index="1" style="background-image: url(&quot;images/slider/slide-2.jpg&quot;); background-size: cover; background-position: center center; width: 1270px; position: relative; left: -1270px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms linear 0s;" aria-hidden="true" tabindex="-1" role="option" aria-describedby="slick-slide01">
-                    <img src="{{ asset('images/slider/slide-2.jpg') }}" alt="" class="slider-bg">
-                </div></div></div>
+            <div class="hero-slider hero-slider-s1">
+                <div class="slide-item">
+                    <img src="{{ asset('images/slider/slide-1.jpg') }}" alt class="slider-bg">
+                </div>
+                <div class="slide-item">
+                    <img src="{{ asset('images/slider/slide-2.jpg') }}" alt class="slider-bg">
+                </div>
+                <div class="slide-item">
+                    <img src="{{ asset('images/slider/slide-3.jpg') }}" alt class="slider-bg">
+                </div>
+            </div>
 
-                
-            <button type="button" class="slick-next slick-arrow" style="display: block;">Next</button><ul class="slick-dots" style="display: block;" role="tablist"><li class="slick-active" aria-hidden="false" role="presentation" aria-selected="true" aria-controls="navigation00" id="slick-slide00"><button type="button" data-role="none" role="button" tabindex="0">1</button></li><li aria-hidden="true" role="presentation" aria-selected="false" aria-controls="navigation01" id="slick-slide01" class=""><button type="button" data-role="none" role="button" tabindex="0">2</button></li></ul></div>
             <div class="wedding-announcement">
                 <div class="couple-name-merried-text">
                     <h2 class="wow slideInUp" data-wow-duration="1s" style="visibility: visible; animation-duration: 1s; animation-name: slideInUp;">Tuan &amp; Ha</h2>
@@ -98,11 +101,11 @@
                         <ul class="nav navbar-nav">
                             <li><a href="javascript:void(0);" data-nav-section="home">Home</a></li>
                             <li class=""><a href="javascript:void(0);"data-nav-section="couple">Couple</a></li>
-                            <li class=""><a href="javascript:void(0);"data-nav-section="story">Story</a></li>
-                            <li class=""><a href="javascript:void(0);"data-nav-section="events">Events</a></li>
-                            <li class=""><a href="javascript:void(0);"data-nav-section="people">People</a></li>
-                            <li class=""><a href="javascript:void(0);"data-nav-section="gallery">Gallery</a></li>
-                            <li class=""><a href="javascript:void(0);"data-nav-section="rsvp">RSVP</a></li>
+                            <li class=""><a href="javascript:void(0);" data-nav-section="story">Story</a></li>
+                            <li class=""><a href="javascript:void(0);" data-nav-section="events">Events</a></li>
+                            <li class=""><a href="javascript:void(0);" data-nav-section="people">People</a></li>
+                            <li class=""><a href="javascript:void(0);" data-nav-section="rsvp">RSVP</a></li>
+                            <li class=""><a href="javascript:void(0);" data-nav-section="gallery">Gallery</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
                 </div><!-- end of container -->
@@ -127,8 +130,8 @@
                             <li class=""><a href="javascript:void(0);" data-nav-section="story">Story</a></li>
                             <li class=""><a href="javascript:void(0);" data-nav-section="events">Events</a></li>
                             <li class=""><a href="javascript:void(0);" data-nav-section="people">People</a></li>
-                            <li class=""><a href="javascript:void(0);" data-nav-section="gallery">Gallery</a></li>
                             <li class=""><a href="javascript:void(0);" data-nav-section="rsvp">RSVP</a></li>
+                            <li class=""><a href="javascript:void(0);" data-nav-section="gallery">Gallery</a></li>
                         </ul>
                     </div><!-- end of nav-collapse -->
                 </div><!-- end of container -->
@@ -144,18 +147,15 @@
                     <div class="col col-xs-12">
                         <div class="gb groom">
                             <div class="img-holder wow fadeInLeftSlow" style="background-image: url(&quot;images/couple/img-1.jpg&quot;); background-size: cover; background-position: center center; visibility: visible; animation-name: fadeInLeftSlow;">
-                                <img src="{{ asset('images/slider/img-1.jpg') }}" alt="">
+                                <img src="{{ asset('images/slider/couple-1.jpg') }}" alt="">
                             </div>
                             <div class="details" style="height: 456px;">
                                 <div class="details-inner">
                                     <h3>The groom</h3>
                                     <p>Hi I am suntina , dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                    <span class="signature">Suntina</span>
+                                    <span class="signature">Anh Tuan</span>
                                     <ul class="social-links">
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://www.facebook.com/profile.php?id=100010740218669"><i class="fab fa-facebook-f"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -165,17 +165,14 @@
                                 <div class="details-inner">
                                     <h3>The Bride</h3>
                                     <p>Hi I am suntina , dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries.</p>
-                                    <span class="signature">Famico</span>
+                                    <span class="signature">Thu Ha</span>
                                     <ul class="social-links">
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                        <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li><a href="https://www.facebook.com/ha.tong.9638"><i class="fab fa-facebook-f"></i></a></li>
                                     </ul>
                                 </div>
                             </div>
                             <div class="img-holder wow fadeInRightSlow" style="background-image: url(&quot;images/couple/img-2.jpg&quot;); background-size: cover; background-position: center center; visibility: visible; animation-name: fadeInRightSlow;">
-                                <img src="{{ asset('images/slider/img-2.jpg') }}" alt="">
+                                <img src="{{ asset('images/slider/couple-2.jpg') }}" alt="">
                             </div>
                         </div>
                     </div>
@@ -186,7 +183,7 @@
 
 
         <!-- start count-down-section -->
-        <section class="count-down-section section-padding parallax" data-bg-image="images/countdown-bg.jpg" data-speed="7" style="background-image: url(&quot;images/countdown-bg.jpg&quot;); background-position: 50% -277.571px; background-size: cover;">
+        <section class="count-down-section section-padding parallax" data-bg-image="{{ asset('images/slider/slide-3.jpg') }}" data-speed="7">
             <div class="container">
                 <div class="row">
                     <div class="col col-md-4">
@@ -227,17 +224,17 @@
                                     </div>
                                 </div>
                                 <div class="col col-md-6">
-                                    <div class="img-holder">
-                                        <img src="{{ asset('images/slider/img-1(1).jpg') }}" alt="" class="img img-responsive">
+                                    <div class="img-holder story-slider">
+                                        <img src="{{ asset('images/slider/story-first-meet-1.jpg') }}" alt="" class="img img-responsive">
+                                        <img src="{{ asset('images/slider/story-first-meet-2.jpg') }}" alt="" class="img img-responsive">
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-md-6">
-                                    <div class="img-holder right-align-text story-slider owl-carousel owl-theme owl-loaded">
-                                        
-                                        
-                                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1320px, 0px, 0px); transition: all 1s ease 0s; width: 2640px;"><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-2(1).jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-3.jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-2(1).jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item active" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-3.jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-2(1).jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-3.jpg') }}" alt="" class="img img-responsive"></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style="display: none;"></div></div></div>
+                                    <div class="img-holder">
+                                        <img src="{{ asset('images/slider/story-first-date-1.jpg') }}" alt class="img img-responsive">
+                                    </div>
                                 </div>
                                 <div class="col col-md-6 text-holder">
                                     <span class="heart">
@@ -256,22 +253,23 @@
                                         <i class="fa fa-heart"></i>
                                     </span>
                                     <div class="story-text right-align-text">
-                                        <h3>Proposal</h3>
-                                        <span class="date">Apr 14 2017</span>
+                                        <h3>Challenges</h3>
+                                        <span class="date">Apr 15 2015</span>
                                         <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, </p>
                                     </div>
                                 </div>
                                 <div class="col col-md-6">
-                                    <div class="img-holder right-align-text story-slider owl-carousel owl-theme owl-loaded">
-                                        
-                                        
-                                    <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-1320px, 0px, 0px); transition: all 1s ease 0s; width: 2640px;"><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-7.jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-5.jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-7.jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item active" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-5.jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-7.jpg') }}" alt="" class="img img-responsive"></div><div class="owl-item cloned" style="width: 440px; margin-right: 0px;"><img src="{{ asset('images/slider/img-5.jpg') }}" alt="" class="img img-responsive"></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style="display: none;"></div></div></div>
+                                    <div class="img-holder right-align-text story-slider">
+                                        <img src="{{ asset('images/slider/story-challenges-1.jpg') }}" alt class="img img-responsive">
+                                        <img src="{{ asset('images/slider/story-challenges-2.jpg') }}" alt class="img img-responsive">
+                                        <img src="{{ asset('images/slider/story-challenges-3.jpg') }}" alt class="img img-responsive">
+                                    </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="col col-md-6">
                                     <div class="img-holder video-holder">
-                                        <img src="{{ asset('images/slider/img-8.jpg') }}" alt="" class="img img-responsive">
+                                        <img src="{{ asset('images/slider/story-proposal-1.jpg') }}" alt="" class="img img-responsive">
                                         <a href="https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1" data-type="iframe" class="video-play-btn">
                                             <i class="fa fa-play"></i>
                                         </a>
@@ -282,8 +280,8 @@
                                         <i class="fa fa-heart"></i>
                                     </span>
                                     <div class="story-text">
-                                        <h3>Enagagement</h3>
-                                        <span class="date">Jul 14 2017</span>
+                                        <h3>Proposal</h3>
+                                        <span class="date">Apr 14 2017</span>
                                         <p>A wonderful serenity has taken possession of my entire soul, like these sweet mornings of spring which I enjoy with my whole heart. I am alone, and feel the charm of existence in this spot, which was created for the bliss of souls like mine. I am so happy, my dear friend, </p>
                                     </div>
                                 </div>
@@ -297,7 +295,7 @@
 
 
         <!-- start cta -->
-        <section class="cta section-padding parallax" data-bg-image="images/cta-bg.jpg" data-speed="7" style="background-image: url(&quot;images/cta-bg.jpg&quot;); background-position: 50% -590.521px; background-size: cover;">
+        <section class="cta section-padding parallax" data-bg-image="{{ asset('images/slider/nhan.jpg') }}" data-speed="7">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -307,7 +305,6 @@
             </div> <!-- end container -->
         </section>
         <!-- end cta -->
-
 
 
         <!-- start events-section -->
@@ -381,10 +378,10 @@
                             <div class="tablist">
                                 <ul class="nav">
                                     <li class="active">
-                                        <a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#groomsmen" data-toggle="tab" aria-expanded="true">Groomsmen</a>
+                                        <a href="#groomsmen" data-toggle="tab" aria-expanded="true">Groomsmen</a>
                                     </li>
                                     <li class="">
-                                        <a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#bridesmaid" data-toggle="tab" aria-expanded="false">Bridesmaid</a>
+                                        <a href="#bridesmaid" data-toggle="tab" aria-expanded="false">Bridesmaid</a>
                                     </li>
                                 </ul>
                             </div>
@@ -393,103 +390,29 @@
                                 <div class="tab-pane fade grid-wrapper active in" id="groomsmen">
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-1(3).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-1(3).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="{{ asset('images/slider/thuy.jpg') }}" class="popup-image">
+                                                <img src="{{ asset('images/slider/thuy.jpg') }}" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Jhon Michel</h3>
-                                            <span>Best man</span>
+                                            <h3>Bích Thùy</h3>
+                                            <span>Best friend</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/thuyluong3008"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-2(3).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-2(3).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="{{ asset('images/slider/anh.jpg') }}" class="popup-image">
+                                                <img src="{{ asset('images/slider/anh.jpg') }}" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Chasmoos jhon</h3>
-                                            <span>Best friden</span>
+                                            <h3>Nhật Ánh</h3>
+                                            <span>Best friend</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-3(1).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-3(1).jpg') }}" alt="" class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Kaiste pate</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-4.jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-4.jpg') }}" alt="" class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Hatu Michel</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-5(1).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-5(1).jpg') }}" alt="" class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Michel doin</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="grid">
-                                        <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-6.jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-6.jpg') }}" alt="" class="img img-responsive">
-                                            </a>
-                                        </div>
-                                        <div class="details">
-                                            <h3>Topper jone</h3>
-                                            <span>Friend</span>
-                                            <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/nhatanh12333"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -498,103 +421,85 @@
                                 <div class="tab-pane fade grid-wrapper" id="bridesmaid">
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-1(4).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-1(4).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/73209062_1487997501351645_8896840907588894720_n.jpg?_nc_cat=102&_nc_ohc=UNLDsW_5My4AQmDgF6rH19SSA2ZrmMir19s3IeBV4W-LQuint4D3v0YCA&_nc_ht=scontent.fsgn5-4.fna&oh=632770b04b96a6661a69fca648bc4981&oe=5EA79B80" class="popup-image">
+                                                <img src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/73209062_1487997501351645_8896840907588894720_n.jpg?_nc_cat=102&_nc_ohc=UNLDsW_5My4AQmDgF6rH19SSA2ZrmMir19s3IeBV4W-LQuint4D3v0YCA&_nc_ht=scontent.fsgn5-4.fna&oh=632770b04b96a6661a69fca648bc4981&oe=5EA79B80" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Rachel Li</h3>
+                                            <h3>Đức Ý</h3>
                                             <span>Made of honor</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/profile.php?id=100004242277037"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-2(4).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-2(4).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/19029341_1185606538251761_1756304055542253887_n.jpg?_nc_cat=102&_nc_ohc=uFRpZaJbaoYAQmC2ngWAWdmKPBielBX5WKPTKQK3ho5Nv35dY8is7Do7g&_nc_ht=scontent.fsgn5-4.fna&oh=c0fd61993d07db5626a548adbb6d050f&oe=5EB27301" class="popup-image">
+                                                <img src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/19029341_1185606538251761_1756304055542253887_n.jpg?_nc_cat=102&_nc_ohc=uFRpZaJbaoYAQmC2ngWAWdmKPBielBX5WKPTKQK3ho5Nv35dY8is7Do7g&_nc_ht=scontent.fsgn5-4.fna&oh=c0fd61993d07db5626a548adbb6d050f&oe=5EB27301" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Male Vign</h3>
+                                            <h3>Như Thanh</h3>
                                             <span>Best friend</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/nhu.thanh.2004"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-3(2).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-3(2).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-9/75593883_1324375134436485_7771602644753186816_n.jpg?_nc_cat=109&_nc_ohc=81Ufvvm4O04AQnzAbmIrsFrWAO6422tJZx7_bVfYovKfXci5n-B3CQtVw&_nc_ht=scontent.fsgn5-6.fna&oh=a9aac068b646f9c496833a8e444fd682&oe=5E6F454C" class="popup-image">
+                                                <img src="https://scontent.fsgn5-6.fna.fbcdn.net/v/t1.0-9/75593883_1324375134436485_7771602644753186816_n.jpg?_nc_cat=109&_nc_ohc=81Ufvvm4O04AQnzAbmIrsFrWAO6422tJZx7_bVfYovKfXci5n-B3CQtVw&_nc_ht=scontent.fsgn5-6.fna&oh=a9aac068b646f9c496833a8e444fd682&oe=5E6F454C" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Jonny Mich</h3>
-                                            <span>Friend</span>
+                                            <h3>Thanh Tuyền</h3>
+                                            <span>Best friend</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/profile.php?id=100005920331179"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-4(1).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-4(1).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="https://scontent.fsgn5-2.fna.fbcdn.net/v/t1.0-9/30708884_981274705368459_960160584928591872_o.jpg?_nc_cat=105&_nc_ohc=TicIo80XhlcAQk89KtjgfhheFg4SmicJcWxhd3jL26s_JxF_UW8ZZSbTQ&_nc_ht=scontent.fsgn5-2.fna&oh=17a46cb163e980a8b160e09d7654e605&oe=5E712CA4" class="popup-image">
+                                                <img src="https://scontent.fsgn5-2.fna.fbcdn.net/v/t1.0-9/30708884_981274705368459_960160584928591872_o.jpg?_nc_cat=105&_nc_ohc=TicIo80XhlcAQk89KtjgfhheFg4SmicJcWxhd3jL26s_JxF_UW8ZZSbTQ&_nc_ht=scontent.fsgn5-2.fna&oh=17a46cb163e980a8b160e09d7654e605&oe=5E712CA4" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Brodd Wid</h3>
-                                            <span>Friend</span>
+                                            <h3>Trinh Nguyễn</h3>
+                                            <span>Best friend</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/nguyen.trinh.96995238"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-5(2).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-5(2).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/52001741_1212779592212146_5718853824840466432_o.jpg?_nc_cat=104&_nc_ohc=YUIVUXwCzekAQkjnPAfBnsiWelDm_YjCNWmVpse39Nw6Bsrz7AsooxGqA&_nc_ht=scontent.fsgn5-4.fna&oh=463ef424410a8854bd5dc7c6c7338d94&oe=5EAD5861" class="popup-image">
+                                                <img src="https://scontent.fsgn5-4.fna.fbcdn.net/v/t1.0-9/52001741_1212779592212146_5718853824840466432_o.jpg?_nc_cat=104&_nc_ohc=YUIVUXwCzekAQkjnPAfBnsiWelDm_YjCNWmVpse39Nw6Bsrz7AsooxGqA&_nc_ht=scontent.fsgn5-4.fna&oh=463ef424410a8854bd5dc7c6c7338d94&oe=5EAD5861" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Nokshal bedi</h3>
-                                            <span>Friend</span>
+                                            <h3>Diễm Phúc</h3>
+                                            <span>Best friend</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/djemphuc.lam"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
                                     <div class="grid">
                                         <div class="img-holder">
-                                            <a href="{{ asset('images/slider/img-6(1).jpg') }}" class="popup-image">
-                                                <img src="{{ asset('images/slider/img-6(1).jpg') }}" alt="" class="img img-responsive">
+                                            <a href="{{ asset('images/slider/thao.jpg') }}" class="popup-image">
+                                                <img src="{{ asset('images/slider/thao.jpg') }}" alt="" class="img img-responsive">
                                             </a>
                                         </div>
                                         <div class="details">
-                                            <h3>Holly Fie</h3>
-                                            <span>Friend</span>
+                                            <h3>Như Thảo</h3>
+                                            <span>Best friend</span>
                                             <ul class="social-links">
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-facebook"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-twitter"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-pinterest"></i></a></li>
-                                                <li><a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#"><i class="fa fa-vimeo"></i></a></li>
+                                                <li><a href="https://www.facebook.com/thaozit.kute"><i class="fab fa-facebook-f"></i></a></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -608,91 +513,8 @@
         <!-- end inportant-people-section -->
 
 
-        <!-- start gallery-section -->
-        <section class="gallery-section section-padding" id="gallery" data-section="gallery">
-            <div class="container">
-                <div class="row">
-                    <div class="col col-xs-12">
-                        <div class="section-title">
-                            <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
-                            <h2>Our gallery</h2>
-                        </div>
-                    </div>
-                </div> <!-- end section-title -->
-
-                <div class="row">
-                    <div class="col col-xs-12 sortable-gallery">
-                        <div class="gallery-filters">
-                            <ul>
-                                <li><a data-filter="*" href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#" class="current">All</a></li>
-                                <li><a data-filter=".wedding" href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#" class="">Wedding</a></li>
-                                <li><a data-filter=".ceremony" href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#" class="">Ceremony</a></li>
-                                <li><a data-filter=".party" href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#" class="">Party</a></li>
-                            </ul>
-                        </div>
-
-                        <div class="gallery-container gallery-fancybox masonry-gallery" style="position: relative; height: 1046.26px;">
-                            <div class="grid wedding" style="position: absolute; left: 0px; top: 0px;">
-                                <a href="{{ asset('images/slider/img-1(5).jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-1(5).jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                            <div class="grid wedding ceremony" style="position: absolute; left: 384px; top: 0px;">
-                                <a href="{{ asset('images/slider/img-2(5).jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-2(5).jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                            <div class="grid ceremony eudcation" style="position: absolute; left: 769px; top: 0px;">
-                                <a href="{{ asset('images/slider/img-3(3).jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-3(3).jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                            <div class="grid wedding party" style="position: absolute; left: 0px; top: 261px;">
-                                <a href="{{ asset('images/slider/img-4(2).jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-4(2).jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                            <div class="grid ceremony" style="position: absolute; left: 384px; top: 292px;">
-                                <a href="{{ asset('images/slider/img-5(3).jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-5(3).jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                            <div class="grid party" style="position: absolute; left: 769px; top: 372px;">
-                                <a href="{{ asset('images/slider/img-6(2).jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-6(2).jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                            <div class="grid wedding" style="position: absolute; left: 384px; top: 628px;">
-                                <a href="{{ asset('images/slider/img-7(1).jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-7(1).jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                            <div class="grid ceremony" style="position: absolute; left: 769px; top: 634px;">
-                               <!--  <a href="images/gallery/img-8.jpg" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="images/gallery/img-8.jpg" alt class="img img-responsive">
-                                </a> -->
-                                <a href="https://www.youtube.com/embed/XSGBVzeBUbk?autoplay=1" data-type="iframe" class="video-play-btn">
-                                    <img src="{{ asset('images/slider/img-8(1).jpg') }}" alt="" class="img img-responsive">
-                                    <i class="fa fa-play"></i>
-                                </a>
-
-                            </div>
-                            <div class="grid ceremony" style="position: absolute; left: 0px; top: 709px;">
-                                <a href="{{ asset('images/slider/img-9.jpg') }}" class="fancybox" data-fancybox-group="gall-1">
-                                    <img src="{{ asset('images/slider/img-9.jpg') }}" alt="" class="img img-responsive">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- end row -->
-            </div> <!-- end container -->
-        </section>
-        <!-- end gallery-section -->
-
-
-
         <!-- start rsvp-section -->
-        <section class="rsvp-section section-padding parallax" data-bg-image="images/rsvp-bg.jpg" data-speed="7" id="rsvp" data-section="rsvp" style="background-image: url(&quot;images/rsvp-bg.jpg&quot;); background-position: 50% -1206.6px; background-size: cover;">
+        <section class="rsvp-section section-padding parallax" data-bg-image="{{ asset('images/slider/namtay.jpg') }}" data-speed="7" id="rsvp" data-section="rsvp">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
@@ -776,62 +598,63 @@
         <!-- end getting-there-section -->
 
 
-        <!-- start gift-registration-section -->
-        <section class="gift-registration-section section-padding">
+        <!-- start gallery-section -->
+        <section class="gallery-section section-padding" id="gallery" data-section="gallery">
             <div class="container">
                 <div class="row">
                     <div class="col col-xs-12">
                         <div class="section-title">
                             <div class="vertical-line"><span><i class="fi flaticon-two"></i></span></div>
-                            <h2>Gift registration</h2>
+                            <h2>Our gallery</h2>
                         </div>
                     </div>
                 </div> <!-- end section-title -->
 
-                <div class="row content">
-                    <div class="col col-lg-10 col-lg-offset-1">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure, cupiditate, repudiandae. A ab sit laboriosam quis distinctio dignissimos, nemo cum sed hic, deleniti maiores rem iste labore commodi perferendis cumque.repudiandae. A ab sit laboriosam quis distinctio dignissimos, nemo cum sed hic.</p>
+                <div class="row">
+                    <div class="col col-xs-12 sortable-gallery">
+                        <div class="gallery-filters">
+                            <ul>
+                                <li><a data-filter="*" href="javascript:void(0);" class="current">All</a></li>
+                                <li><a data-filter=".wedding" href="javascript:void(0);" class="">Wedding</a></li>
+                                <li><a data-filter=".travel" href="javascript:void(0);" class="">Travel</a></li>
+                            </ul>
+                        </div>
 
-                        <div class="gif-registration-slider owl-carousel owl-theme owl-loaded">
-                            
-                            
-                            
-                            
-                            
-                        <div class="owl-stage-outer"><div class="owl-stage" style="transform: translate3d(-2205px, 0px, 0px); transition: all 1s ease 0s; width: 3485px; padding-left: 10px; padding-right: 10px;"><div class="owl-item cloned" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-3(4).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item cloned" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-1(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item cloned" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-2(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-1(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-2(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-3(4).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-1(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item active" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-2(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item cloned active" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-1(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item cloned active" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-2(6).jpg') }}" alt="" class="img img-responsive">
-                            </div></div><div class="owl-item cloned" style="width: 295px; margin-right: 20px;"><div class="register">
-                                <img src="{{ asset('images/slider/img-3(4).jpg') }}" alt="" class="img img-responsive">
-                            </div></div></div></div><div class="owl-controls"><div class="owl-nav"><div class="owl-prev" style="display: none;">prev</div><div class="owl-next" style="display: none;">next</div></div><div class="owl-dots" style="display: none;"></div></div></div>
+                        <div class="gallery-container gallery-fancybox masonry-gallery">
+                            @foreach (glob('images/slider/gallery/friend/*.*') as $key => $file)
+                                <div class="grid pre-wedding">
+                                    @if ($key == 6)
+                                        <a href="https://www.youtube.com/embed/uXJT5x2X3H8?autoplay=1" data-type="iframe" class="video-play-btn">
+                                            <img src="{{ asset($file) }}" alt="" class="img img-responsive">
+                                            <i class="fa fa-play"></i>
+                                        </a>
+                                    @else
+                                        <a href="{{ asset($file) }}" class="fancybox" data-fancybox-group="gall-1">
+                                            <img src="{{ asset($file) }}" alt="" class="img img-responsive">
+                                        </a>
+                                    @endif
+                                </div>
+                            @endforeach
+
+                            @foreach (glob('images/slider/gallery/travel/*.*') as $key => $file)
+                                <div class="grid travel">
+                                    <a href="{{ asset($file) }}" class="fancybox" data-fancybox-group="gall-1">
+                                        <img src="{{ asset($file) }}" alt="" class="img img-responsive">
+                                    </a>
+                                </div>
+                            @endforeach
+                        </div>
                     </div>
                 </div> <!-- end row -->
             </div> <!-- end container -->
         </section>
-        <!-- end gift-registration-section -->
+        <!-- end gallery-section -->
 
 
         <!-- start footer -->
         <footer class="site-footer">
             <div class="back-to-top">
-                <a href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/index.html#" class="back-to-top-btn"><span><i class="fi flaticon-cupid"></i></span></a>
+                <a href="javascript:void(0);" class="back-to-top-btn"><span><i class="fi flaticon-cupid"></i></span></a>
             </div>
             <div class="container">
                 <div class="row">

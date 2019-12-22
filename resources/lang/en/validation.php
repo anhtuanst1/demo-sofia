@@ -106,7 +106,7 @@ return [
         ],
     ],
     'attributes'           => [],
-    'site_title'           => 'Laravel + CoreUI',
+    'site_title'           => 'Sofia',
     'userManagement'       => [
         'title'          => 'User Management',
         'title_singular' => 'User Management',

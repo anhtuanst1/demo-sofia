@@ -207,8 +207,8 @@
                     popupSaveTheDateCircle();
                 }
 
-                //Active heor slider
-                // heroSlider();
+                //Active hero slider
+                heroSlider();
 
             });
         }
@@ -667,6 +667,7 @@
         WHEN DOCUMENT LOADING
     ==========================================================================*/
         $(window).on('load', function() {
+            $("html,body").animate({scrollTop: 0}, 500);
 
             preloader();
 
@@ -683,7 +684,7 @@
                 setTwoColEqHeight($(".wedding-couple-section .gb .img-holder"), $(".wedding-couple-section .gb .details"));
             }
 
-            smoothScrolling($("#navbar > ul > li > a[href^='#']"), $(".header-style-1 .navigation").innerHeight());
+            smoothScrolling($("#navbar > ul > li > a[href^='javascript:void(0);']"), $(".header-style-1 .navigation").innerHeight());
 
         });
 
@@ -770,12 +771,12 @@
     // Page Nav
     var clickMenu = function() {
 
-        $('a:not([class="navbar-brand"])').click(function(event){
+        $('#navbar a:not([class="navbar-brand"])').click(function(event){
             var section = $(this).data('nav-section'),
                 navbar = $('#navbar');
-            if(typeof $('[data-section="' + section + '"]') !== 'undefined' && section !== 'undefined'){
+            if(typeof $('section[data-section="' + section + '"]') !== 'undefined' && section !== 'undefined'){
                 $('html, body').animate({
-                        scrollTop: $('[data-section="' + section + '"]').offset().top
+                        scrollTop: $('section[data-section="' + section + '"]').offset().top
                 }, 500);
             }
 

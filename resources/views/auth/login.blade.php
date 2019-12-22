@@ -14,7 +14,7 @@
                         {{ csrf_field() }}
                         <h1>
                             <div class="login-logo">
-                                <a href="#">
+                                <a href="{{ route('welcome') }}">
                                     {{ trans('global.site_title') }}
                                 </a>
                             </div>

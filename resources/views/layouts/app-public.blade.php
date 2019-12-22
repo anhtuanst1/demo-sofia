@@ -9,16 +9,10 @@
         <!-- Page Title -->
         <title> Lovly Wedding - Responsive Wedding Template </title>
 
-        <!-- Favicon and Touch Icons -->
-        <!-- <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/favicon.png" rel="shortcut icon" type="image/png">
-        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon.png" rel="apple-touch-icon">
-        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon-72x72.png" rel="apple-touch-icon" sizes="72x72">
-        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon-114x114.png" rel="apple-touch-icon" sizes="114x114">
-        <link href="http://irsfoundation.com/tf/templates/wedding/lovely-wedding/lovely-wedding/images/favicon/apple-touch-icon-144x144.png" rel="apple-touch-icon" sizes="144x144"> -->
-
         <!-- Icon fonts -->
         <!-- <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" /> -->
-        <!-- <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" /> -->
+        <link href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" rel="stylesheet" />
+        <link href="{{ asset('css/new/flaticon.css') }}" rel="stylesheet" />
 
         <!-- Bootstrap core CSS -->
         <link href="{{ asset('css/new/bootstrap.min.css') }}" rel="stylesheet" />

@@ -9,6 +9,10 @@ body {
     background-color: #E5E5E5;
 }
 
+a:hover {
+    text-decoration: none;
+}
+
 /*header*/
 .app-header {
     height: 70px;

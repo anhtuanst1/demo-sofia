@@ -93,7 +93,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="couple-logo">
-                            <h1><a href="javascript:void(0);" data-nav-section="home"><img class="logo-header navbar-brand-full m-0" src="{{ asset('images/logo.png') }}"></a></h1>
+                            <h1 id="logo-header"><a href="javascript:void(0);" data-nav-section="home"><img class="logo-header navbar-brand-full m-0" src="{{ asset('images/logo.png') }}"></a></h1>
                         </div>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">
@@ -119,7 +119,7 @@
                             <span class="icon-bar"></span>
                         </button>
                         <div class="couple-logo">
-                            <h1><a href="javascript:void(0);" data-nav-section="home"><img class="logo-header navbar-brand-full m-0" src="{{ asset('images/logo.png') }}"></a></h1>
+                            <h1 id="logo-header"><a href="javascript:void(0);" data-nav-section="home"><img class="logo-header navbar-brand-full m-0" src="{{ asset('images/logo.png') }}"></a></h1>
                         </div>
                     </div>
                     <div id="navbar" class="navbar-collapse collapse navbar-right navigation-holder">

@@ -784,8 +784,10 @@
             return false;
         });
 
+        $('#logo-header a:not([class="navbar-brand"])').click(function(event){
+            $("html,body").animate({scrollTop: 0}, 500);
+        });
+
     };
-
-
 
 })(window.jQuery);

@@ -7,7 +7,7 @@
         <!-- Meta Tags -->
 
         <!-- Page Title -->
-        <title> Lovly Wedding - Responsive Wedding Template </title>
+        <title> Tuan - Ha </title>
 
         <!-- Icon fonts -->
         <!-- <link href="{{ asset('css/font-awesome.css') }}" rel="stylesheet" /> -->
